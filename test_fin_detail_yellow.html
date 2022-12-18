@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>ATTHIS</title>
+    </head>
+    <style>
+        @font-face {
+                font-family: 'MaruBuri-Regular';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+        body{
+
+            height: 2500px;
+        }
+        .header{
+                position: fixed;
+                margin: 0px;
+                top:0px;
+                height: 38px;
+                width: 100%;
+                text-align: center;
+                box-sizing: border-box;
+                background-color : #101447dc;
+                z-index: 5;
+            }
+
+        .header-logo {
+                position: absolute;             
+                scale: 100%;
+                z-index: 3;
+            }
+        .header-img{
+                scale: 12%;
+                position: absolute;
+                z-index: 5;
+                top: -520px;
+                
+
+            }
+        .header-img:hover {
+                opacity: 50%;
+                scale: 13.5%;
+            }
+
+        .bird-gif{
+            position: fixed;
+            top: 13%;
+            left: -200px;
+            z-index: 1;
+
+        }
+
+        .bg-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 30px auto;
+            position: absolute;
+            z-index: -1;
+        }
+
+        video {
+            width: 100%;
+            z-index: -1;
+            position: fixed;
+        }
+
+        .bg-text {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+        }
+        .bg-text p {
+            margin-top: -24px;
+            text-align: center;
+            font-size: 36px;
+            color:  #3525259f;
+            font-weight: 600;
+            font-family: 'MaruBuri-Regular';
+        }
+
+        .text-box{
+                position: absolute;
+                top: 100px;
+                left:900px;
+                border-radius: 15px;
+                overflow: hidden;
+                margin:100px;
+                
+                width: 800px;
+                height: 1800px;
+                background-color: #ac995b7e;
+                
+                
+            }
+        .text-box h1{
+            position: absolute;
+            top: 10%;
+            left: 10%;
+                font-family: 'MaruBuri-Regular';
+                font-size: 48px;
+                font-weight: 600;
+                margin-top: -24px;
+            color:#352525d2;
+                
+            }
+
+        .text-box p{
+            position: absolute;
+            top: 30%;
+            left: 10%;
+                font-family: 'MaruBuri-Regular';
+                font-size: 24px;
+                font-weight: 600;
+                margin-top: -24px;
+                
+            }
+        .youtube{
+            position: absolute;
+            scale: 80%;
+            top: 2150px;
+            left: 1100px;
+        }
+        h1{
+            position: absolute;
+            top: 2100px;
+            left: 1150px;
+            font-family: 'MaruBuri-Regular';
+            font-size: 24px;
+            font-weight: 600;
+            color:#352525d2;
+            
+        }
+        .upload{
+            position: absolute;
+            top: 2120px;
+            left: 1400px;
+            font-family: 'MaruBuri-Regular';
+            font-size: 16px;
+            font-weight: 600;
+            color:#352525d2;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo" >
+        <a href="test_fin_main.html">
+            <img class="header-img" src="boori-static.gif" />
+        </a>
+        </div>
+        <div class="header-graphic"></div>
+    </header>
+
+    <img class="bird-gif" src="yellow.gif">
+    
+    <div class="text-box">
+        
+        <img src ="yellow-detail.png"/>
+        
+    
+    </div>
+
+    <div class= "bg-box">
+        <video muted autoplay loop>
+        <source src="main_bg.mp4" type="video/mp4">
+        </video>
+        
+    </div>
+    <div> 
+        <h1>제보</h1><input class= "upload" type="file" accept="image/*">
+        <img class="youtube" width="560" height="315" 
+        src="yellow-thumb.png">
+    </div>
+        
+</body>
+<script>
+    /* const staticImg="atthis-static2.gif";
+    const gifImg ="atthis.gif";
+
+    const image = document.querySelector('.bird-gif');
+    image.src = staticImg;
+
+    image.addEventListener("mouseenter", function() {
+        image.src = gifImg;
+    });
+    image.addEventListener("mouseleave", function() {
+        image.src = staticImg;
+    }); */
+</script>
+
+</html>
